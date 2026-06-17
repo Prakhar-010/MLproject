@@ -1,0 +1,62 @@
+<html>
+<head>
+    <title>Student Exam Performance Indicator</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .landing {
+            background: #ffffff;
+            border-radius: 12px;
+            padding: 50px 40px;
+            max-width: 480px;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        h1 {
+            color: #4a4a4a;
+            font-size: 24px;
+            margin-bottom: 12px;
+        }
+
+        p {
+            color: #777;
+            font-size: 15px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        .btn-start {
+            display: inline-block;
+            padding: 12px 30px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #fff;
+            text-decoration: none;
+            border-radius: 6px;
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        .btn-start:hover {
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+    <div class="landing">
+        <h1>Student Exam Performance Indicator</h1>
+        <p>Enter a student's background and test details to predict their expected math score, powered by a machine learning model trained on historical exam data.</p>
+        <a class="btn-start" href="{{ url_for('predict_datapoint') }}">Get Started</a>
+    </div>
+</body>
+</html>
